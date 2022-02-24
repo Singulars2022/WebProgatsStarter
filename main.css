@@ -15,6 +15,17 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#swipeUp {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+}
+
+#swipeUp img {
+  width: 50px;
+  filter: grayscale(100%);
+}
+
 /* Selectores de clase */
 
 .header {
@@ -41,6 +52,12 @@ body {
   border-radius: 14px;
   width: 150px;
   text-align: center;
+  font-weight: 700;
+}
+
+.menu--item:hover {
+  color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .menu {
@@ -128,6 +145,18 @@ body {
   border-radius: 8px;
 }
 
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--bg-primary);
+}
+
+.footer--link {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
 /* Versión tablet */
 
 @media (min-width: 598px) {
@@ -146,5 +175,9 @@ body {
 
   .header {
     display: flex;
+  }
+
+  .hero {
+    background-image: url("./img/sleepingCat.jpg");
   }
 }
